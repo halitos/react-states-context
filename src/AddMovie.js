@@ -16,15 +16,20 @@ const AddMovie = () => {
   function addMovie(e) {
     e.preventDefault();
     let newMovie = [{ name: name, price: price }];
-    setMovies(movies.concat(newMovie));
+    if (name && price) {
+      setMovies(movies.concat(newMovie));
+    }
     setName("");
     setPrice("");
   }
 
   return (
     <form onSubmit={addMovie}>
+      <label>Movie Title</label>
       <input type="text" name="name" value={name} onChange={updateName} />
+      <label>Price</label>
       <input type="text" name="price" value={price} onChange={updatePrice} />
+      <br />
       <button>Submit</button>
     </form>
   );
