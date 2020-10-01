@@ -24,12 +24,16 @@ const AddMovie = () => {
   }
 
   return (
-    <form onSubmit={addMovie}>
-      <label>Movie Title</label>
-      <input type="text" name="name" value={name} onChange={updateName} />
-      <label>Price</label>
-      <input type="text" name="price" value={price} onChange={updatePrice} />
-      <br />
+    <form onSubmit={addMovie} className="form-div">
+      <div className="box-1">
+        <label>Title</label>
+        <input type="text" name="name" value={name} onChange={updateName} />
+      </div>
+      <div className="box-2">
+        <label>Price</label>
+        <input type="text" name="price" value={price} onChange={updatePrice} />
+      </div>
+
       <button>Submit</button>
     </form>
   );
