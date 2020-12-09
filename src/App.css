@@ -20,3 +20,18 @@
 .box-2 {
   padding-top: 5px;
 }
+
+.add-btn {
+  margin-top: 5px;
+  padding: 0.3em;
+  width: 3rem;
+  background-color: burlywood;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input {
+  height: 1.2rem;
+  margin-bottom: 5px;
+}

@@ -7,7 +7,7 @@ const Nav = () => {
   return (
     <div className="nav">
       <h3>Merhaba</h3>
-      <p>Number of Movies:{movies.length} </p>
+      <p>Number of Movies: {movies.length} </p>
     </div>
   );
 };
