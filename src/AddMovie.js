@@ -18,7 +18,7 @@ const AddMovie = () => {
     let newMovie = [{ name: name, price: "£" + price }];
     if (name && price) {
       setMovies(movies.concat(newMovie));
-    }
+    } else alert("noooo");
     setName("");
     setPrice("");
   }
