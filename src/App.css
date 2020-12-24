@@ -5,8 +5,13 @@
 .nav {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding: 20px, 10px;
   background-color: burlywood;
+}
+
+.nav p {
+  font-weight: 700;
 }
 
 .form-div {
