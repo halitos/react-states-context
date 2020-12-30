@@ -6,7 +6,7 @@ const Nav = () => {
 
   return (
     <div className="nav">
-      <h2>Welcome to Movie Lister</h2>
+      <h1>Movie Lister</h1>
       <p>Number of Movies: {movies.length} </p>
     </div>
   );
